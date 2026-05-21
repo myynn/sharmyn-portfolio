@@ -62,29 +62,39 @@
 
 @media (max-width: 768px) {
   .navbar {
-    width: calc(100% - 20px);
+    width: fit-content;
+
+    max-width: 92vw;
+
     top: 10px;
 
-    justify-content: flex-start;
+    justify-content: center;
 
     overflow-x: auto;
     scrollbar-width: none;
 
-    padding: 0.6rem;
+    padding: 0.45rem 0.5rem;
+
     border-radius: 10px;
+
+    gap: 0.2rem;
   }
 
   .navbar::-webkit-scrollbar {
     display: none;
   }
 
-  .navbar::before {
-    display: none;
-  }
-
   .nav-link {
     white-space: nowrap;
-    font-size: 0.78rem;
-    padding: 0.5rem 0.7rem;
+
+    font-size: 0.72rem;
+
+    padding: 0.42rem 0.58rem;
+
+    border-radius: 8px;
+  }
+
+  .nav-link.active {
+    border-radius: 8px;
   }
 }
