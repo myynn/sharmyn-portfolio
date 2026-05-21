@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Send } from "lucide-react";
-import "../css/contact.css";
+import "src/css/contact.css";
 
 function Contact() {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });

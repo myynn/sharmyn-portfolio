@@ -1,8 +1,7 @@
-import mentora from "../assets/images/Mentora-Web-App.png";
-import strokeguard from "../assets/images/StrokeGuard.png";
-import sustainabite from "../assets/images/SustainaBite-App.png";
-import wandersafe from "../assets/images/IoT-WanderSafe.png";
-import devops from "../assets/images/IoT-WanderSafe.png";
+import mentora from "src/assets/images/Mentora-Web-App.png";
+import strokeguard from "src/assets/images/StrokeGuard.png";
+import sustainabite from "src/assets/images/SustainaBite-App.png";
+import wandersafe from "src/assets/images/IoT-WanderSafe.png";
 
 export const projects = [
   {
