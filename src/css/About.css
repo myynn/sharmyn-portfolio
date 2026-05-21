@@ -247,7 +247,7 @@
 
 .star-two {
   top: 58%;
-  right: 34px;
+  right: 18px;
   font-size: 1.2rem;
   color: #6ea8ff;
   animation-delay: 1s;
@@ -255,7 +255,7 @@
 
 .star-three {
   bottom: 28px;
-  left: 42%;
+  left: 84%;
   font-size: 1.4rem;
   animation-delay: 1.8s;
 }
