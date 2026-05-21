@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { Trophy, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 
-import award1 from "./assets/images/Sharmyn-NTUCStarterAwards.jpg";
-import award2 from "./assets/images/DellInnovateFest.jpg";
-import award3 from "./assets/images/DellInnovateFest2.jpg";
+import award1 from "../assets/images/Sharmyn-NTUCStarterAwards.jpg";
+import award2 from "../assets/images/DellInnovateFest.jpg";
+import award3 from "../assets/images/DellInnovateFest2.jpg";
 
 import "../css/awards.css";
 

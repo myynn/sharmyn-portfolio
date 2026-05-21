@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { projects } from "./data/projects.js";
-import "./css/projects.css";
+import "../css/projects.css";
 
 function Projects() {
   return (

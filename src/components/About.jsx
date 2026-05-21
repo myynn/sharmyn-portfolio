@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import headshot1 from "./assets/images/Sharmyn-Headshot.jpg";
-import headshot2 from "./assets/images/Sharmyn_Headshot2.jpg";
+import headshot1 from "../assets/images/Sharmyn-Headshot.jpg";
+import headshot2 from "../assets/images/Sharmyn_Headshot2.jpg";
 
 import "../css/about.css";
 

@@ -6,7 +6,7 @@ import {
   FaEnvelope,
   FaFileAlt,
 } from "react-icons/fa";
-import "src/css/hero.css";
+import "../css/hero.css";
 
 function Hero() {
   const name = "SHARMYN  HO".split("");
