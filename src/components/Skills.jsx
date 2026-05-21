@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { skillCategories } from "src/data/skills.js";
-import "src/css/skills.css";
+import { skillCategories } from "./data/skills.js";
+import "./css/skills.css";
 
 function Skills() {
   return (
