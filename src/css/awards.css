@@ -1,0 +1,266 @@
+.awards-section {
+  width: min(1200px, 92%);
+  margin: 7rem auto 0;
+}
+
+.awards-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.awards-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  color: #27385b;
+  line-height: 1.1;
+}
+
+.awards-heading h2 span {
+  color: #2563eb;
+}
+
+.awards-board {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 2.4rem;
+  align-items: center;
+
+  padding: 2.4rem;
+
+  background:
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    linear-gradient(rgba(39,56,91,0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(39,56,91,0.14) 1px, transparent 1px);
+
+  background-size: auto, 32px 32px, 32px 32px;
+
+  border: 1px solid rgba(39, 56, 91, 0.16);
+  box-shadow: 14px 14px 0 rgba(39, 56, 91, 0.08);
+  overflow: hidden;
+}
+
+.awards-deco {
+  position: absolute;
+  z-index: 2;
+  color: #2563eb;
+  pointer-events: none;
+  animation: awardFloat 4s ease-in-out infinite;
+}
+
+.award-star-one {
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 2rem;
+}
+
+.award-star-two {
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 1.7rem;
+  color: #6ea8ff;
+  animation-delay: 0.9s;
+}
+
+.award-star-three {
+  top: 42%;
+  right: 40%;
+  font-size: 1.2rem;
+  color: rgba(37, 99, 235, 0.55);
+  animation-delay: 1.4s;
+}
+
+@keyframes awardFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: translateY(-7px) rotate(7deg);
+    opacity: 1;
+  }
+}
+
+.awards-gallery {
+  position: relative;
+  z-index: 1;
+}
+
+.awards-image-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  padding: 0;
+  border: 2px solid #27385b;
+  background: #27385b;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  box-shadow:
+    10px 10px 0 rgba(39, 56, 91, 0.12),
+    0 16px 30px rgba(39, 56, 91, 0.08);
+}
+
+.awards-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* same indicator style as About */
+.award-switcher {
+  margin-top: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.award-switcher::before,
+.award-switcher::after {
+  content: "";
+  width: 34px;
+  height: 1.5px;
+  background: rgba(39, 56, 91, 0.35);
+}
+
+.award-mark {
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 1.05rem;
+  color: rgba(39, 56, 91, 0.28);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.award-mark:hover,
+.award-mark.active {
+  color: #2563eb;
+  transform: rotate(45deg) scale(1.15);
+  text-shadow: 0 0 12px rgba(110, 168, 255, 0.5);
+}
+
+.awards-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.award-box {
+  padding: 1.4rem;
+
+  background: #ffffff;
+  border: 1px solid rgba(39, 56, 91, 0.16);
+
+  box-shadow:
+    8px 8px 0 rgba(39, 56, 91, 0.09),
+    0 16px 30px rgba(39, 56, 91, 0.06);
+}
+
+.award-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.75rem;
+
+  border-bottom: 1px dashed rgba(39, 56, 91, 0.24);
+}
+
+.award-title svg {
+  color: #2563eb;
+  width: 28px;
+  height: 28px;
+}
+
+.award-title h3 {
+  font-size: 1.25rem;
+  color: #27385b;
+}
+
+.award-box ul {
+  padding-left: 1.2rem;
+}
+
+.award-box li {
+  margin-bottom: 0.55rem;
+  color: #374151;
+  line-height: 1.55;
+}
+
+.award-box {
+  position: relative;
+
+  padding: 1.4rem;
+
+  background: #ffffff;
+  border: 1px solid rgba(39, 56, 91, 0.16);
+
+  box-shadow:
+    10px 10px 0 rgba(39, 56, 91, 0.1),
+    0 16px 30px rgba(39, 56, 91, 0.06);
+
+  transition: 0.3s ease;
+}
+
+.award-box::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(-4deg);
+
+  width: 58px;
+  height: 18px;
+
+  background: rgba(110, 168, 255, 0.25);
+}
+
+.award-box:hover {
+  transform: translateY(-6px) rotate(-0.5deg);
+
+  box-shadow:
+    14px 14px 0 rgba(39, 56, 91, 0.13),
+    0 20px 36px rgba(39, 56, 91, 0.1);
+}
+
+.award-box:nth-child(1)::before {
+  transform: translateX(-50%) rotate(-5deg);
+}
+
+.award-box:nth-child(2)::before {
+  transform: translateX(-50%) rotate(4deg);
+}
+
+@media (max-width: 850px) {
+  .awards-board {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .awards-section {
+    width: 92%;
+  }
+
+  .awards-board {
+    padding: 1.2rem;
+  }
+
+  .award-box {
+    padding: 1.1rem;
+  }
+}

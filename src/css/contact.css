@@ -1,0 +1,323 @@
+.contact-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 7rem;
+
+  min-height: auto;
+  padding: 3.3rem 1.5rem 2.4rem;
+
+  position: relative;
+  overflow: hidden;
+
+  background: #27385b;
+  color: #f8fafc;
+}
+
+.contact-grid-layer {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(110, 168, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110, 168, 255, 0.09) 1px, transparent 1px),
+    radial-gradient(circle, rgba(110, 168, 255, 0.18) 1px, transparent 1px);
+
+  background-size: 72px 72px, 72px 72px, 38px 38px;
+  animation: contactGridMove 16s linear infinite;
+  opacity: 0.45;
+}
+
+@keyframes contactGridMove {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  to {
+    background-position: 72px 72px, 72px 72px, 38px 38px;
+  }
+}
+
+.contact-inner {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.contact-copy {
+  max-width: 640px;
+}
+
+.contact-subtitle {
+  color: #6ea8ff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.9rem;
+}
+
+.contact-copy h2 {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.contact-copy h2 span {
+  color: #6ea8ff;
+}
+
+.contact-copy p {
+  color: rgba(248, 250, 252, 0.82);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.15rem;
+
+  background: #f8fafc;
+  border: 2px solid #f8fafc;
+
+  color: #27385b;
+
+  font-weight: 900;
+  transition: 0.28s ease;
+}
+
+.contact-links a:hover {
+  background: #6ea8ff;
+  border-color: #6ea8ff;
+  color: #27385b;
+
+  transform: translateY(-4px);
+}
+
+.contact-links svg {
+  font-size: 1.15rem;
+}
+
+.paper-plane-area {
+  min-height: 170px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.4rem;
+}
+
+.plane-animation {
+  position: relative;
+  width: 360px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.paper-plane {
+  width: 88px;
+  height: 88px;
+
+  display: grid;
+  place-items: center;
+
+  color: #ffffff;
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.35));
+
+  position: relative;
+  z-index: 2;
+}
+
+.paper-plane svg {
+  width: 74px;
+  height: 74px;
+  stroke-width: 1.5;
+}
+
+.plane-trail {
+  position: absolute;
+  width: 230px;
+  height: 2px;
+  right: 74px;
+  top: 48%;
+
+  background: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8) 0 14px,
+    transparent 14px 24px
+  );
+
+  animation: trailMove 2.8s linear infinite;
+}
+
+.trail-two {
+  top: 62%;
+  width: 170px;
+  opacity: 0.45;
+  animation-delay: 0.4s;
+}
+
+@keyframes trailMove {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -48px 0;
+  }
+}
+
+.contact-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  transform: translate(var(--star-x, 0), var(--star-y, 0));
+  transition: transform 0.12s ease-out;
+}
+
+.contact-stars span {
+  position: absolute;
+  z-index: 1;
+
+  width: 12px;
+  height: 12px;
+
+  background: #6ea8ff;
+  clip-path: polygon(
+    50% 0%,
+    62% 35%,
+    100% 50%,
+    62% 65%,
+    50% 100%,
+    38% 65%,
+    0% 50%,
+    38% 35%
+  );
+
+  opacity: 0.38;
+  filter: drop-shadow(0 0 12px rgba(110, 168, 255, 0.55));
+  animation: contactStarFloat 5s ease-in-out infinite;
+}
+
+.contact-stars span:nth-child(1) { top: 16%; left: 8%; width: 18px; height: 18px; }
+.contact-stars span:nth-child(2) { top: 20%; right: 14%; }
+.contact-stars span:nth-child(3) { bottom: 18%; left: 12%; width: 10px; height: 10px; }
+.contact-stars span:nth-child(4) { bottom: 20%; right: 20%; width: 16px; height: 16px; }
+.contact-stars span:nth-child(5) { top: 48%; left: 48%; width: 9px; height: 9px; }
+.contact-stars span:nth-child(6) { top: 72%; right: 8%; width: 13px; height: 13px; }
+.contact-stars span:nth-child(7) { top: 36%; left: 28%; width: 8px; height: 8px; }
+.contact-stars span:nth-child(8) { top: 66%; left: 62%; width: 15px; height: 15px; }
+
+@keyframes contactStarFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-6deg);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateY(-16px) rotate(8deg);
+    opacity: 0.72;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .paper-plane-area {
+    min-height: auto;
+  }
+
+  .plane-animation {
+    width: min(340px, 100%);
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-section {
+    padding: 3.2rem 1rem 2.2rem;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(2.4rem, 13vw, 3.4rem);
+  }
+
+  .contact-copy p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .paper-plane-area {
+    gap: 0.8rem;
+  }
+
+  .plane-animation {
+    width: 250px;
+    height: 85px;
+  }
+
+  .paper-plane {
+    width: 58px;
+    height: 58px;
+  }
+
+  .paper-plane svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .plane-trail {
+    width: 135px;
+    right: 58px;
+    top: 45%;
+  }
+
+  .trail-two {
+    width: 95px;
+    top: 60%;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.55rem;
+  }
+
+  .contact-links a {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.82rem;
+    justify-content: center;
+  }
+
+  .contact-links svg {
+    font-size: 1rem;
+  }
+}

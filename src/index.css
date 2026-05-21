@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,24 @@ html {
 }
 
 body {
-  font-family: Inter, sans-serif;
-  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  background: #f4f8fc;
   color: #111827;
+  overflow-x: hidden;
+
+  background-image:
+    linear-gradient(rgba(39, 56, 91, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(39, 56, 91, 0.06) 1px, transparent 1px);
+
+  background-size: 46px 46px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
