@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Awards from "./components/Awards";
-import Contact from "./components/Contact";
+import Navbar from "./components/NavBar.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
+import Awards from "./components/Awards.jsx";
+import Contact from "./components/Contact.jsx";
 import "./css/global.css";
 
 function App() {
