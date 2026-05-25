@@ -13,7 +13,7 @@ export const projects = [
     tech: ["Figma", "JIRA", "Design Thinking", "Agile"],
     github: null,
     live: null,
-    caseStudy: "/docs/navify-case-study.pdf",
+    caseStudy: "/navify-case-study.pdf",
     prototype: "https://www.figma.com/community/file/1533562181571810962/amdt-part3-sharmynho-2400847f",
   },
   {
