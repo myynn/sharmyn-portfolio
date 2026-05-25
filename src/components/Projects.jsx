@@ -58,28 +58,32 @@ function Projects() {
 
                 <div className="project-buttons">
                   {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={project.live} target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt />
                       Live Site
                     </a>
                   )}
 
                   {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <FaGithub />
                       GitHub
                     </a>
                   )}
 
-                  {!project.live && !project.github && (
+                  {project.caseStudy && (
+                    <a href={project.caseStudy} target="_blank" rel="noopener noreferrer">
+                      Case Study
+                    </a>
+                  )}
+
+                  {project.prototype && (
+                    <a href={project.prototype} target="_blank" rel="noopener noreferrer">
+                      Figma Prototype
+                    </a>
+                  )}
+
+                  {!project.live && !project.github && !project.caseStudy && !project.prototype && (
                     <span className="project-private">Case study available on request</span>
                   )}
                 </div>

@@ -2,8 +2,20 @@ import mentora from "../assets/images/Mentora-Web-App.png";
 import strokeguard from "../assets/images/StrokeGuard.png";
 import sustainabite from "../assets/images/SustainaBite-App.png";
 import wandersafe from "../assets/images/IoT-WanderSafe.png";
+import navify from "../assets/images/Navify-app.png";
 
 export const projects = [
+  {
+    title: "Navify",
+    image: navify,
+    description:
+      "A Design Thinking and Agile project focused on improving the campus lost and found experience through a more organised and user-centred digital solution. Designed in Figma and planned using JIRA, the project follows Define, Ideate, and Prototype phases to demonstrate UI/UX design, sprint planning, usability testing, and iterative prototyping.",
+    tech: ["Figma", "JIRA", "Design Thinking", "Agile"],
+    github: null,
+    live: null,
+    caseStudy: "/docs/navify-case-study.pdf",
+    prototype: "https://www.figma.com/community/file/1533562181571810962/amdt-part3-sharmynho-2400847f",
+  },
   {
     title: "SustainaBite",
     image: sustainabite,
